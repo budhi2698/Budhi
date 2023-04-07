@@ -38,7 +38,7 @@ border-collapse: collapse;
 
 }
 .add{
-    background-color: rgb(33, 224, 224);
+    background-color: #54e4ee; 
     border: none;
     border-radius: 20px; 
     height: 30px;
@@ -50,7 +50,7 @@ border-collapse: collapse;
 
 }
 .add:hover {
-    background-color: #3e8e41; 
+    background-color: rgb(21, 172, 172); 
 }
 .update{
     background-color: rgb(241, 241, 25);
@@ -144,12 +144,14 @@ label {
     justify-content: center;
 }
 input{
-    width: 97%;
-    height: 30px;
+    width: 99%;
+    height: 40px;
     padding: 5px;
     font-family: sans-serif;
-    border-radius: 3px;
-    border: 1px solid #ccc;
+    border-radius: 6px;
+    /* border: 1px solid #ccc; */
+    border: none;
+    box-shadow: #ddd;
     margin-bottom: 10px;
     justify-content: center;
 }
@@ -163,8 +165,10 @@ button[type="submit"] {
     font-size: 16px;
     margin-top: 10px;
     text-align: center;
+    width: 99%;
+    height: 40px;
 }
-.remov{
+/* .remov{
     background-color: #f51d1d;
     border: none;
     border-radius: 20px;
@@ -175,6 +179,10 @@ button[type="submit"] {
 }
 .remov:hover{
     background-color:#8b0505;
+} */
+.sub{
+    width: 99%;
+    height: 40px;
 }
 .sub:hover{
     background-color: #02411e;
@@ -183,11 +191,11 @@ button[type="submit"] {
 .addemploe:hover{
     background-color: #02411e;
 }
-.deleted{
+/* .deleted{
     margin: auto;
     padding: 20px;
     padding-top: 30px;
-}
+} */
 
 
 
