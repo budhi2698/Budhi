@@ -10,17 +10,63 @@
 </head>
 <body>
  
-    <form action="home.html">
+
+    <form>  
         <p>Employee Details Form</p>
 
         <label>Name</label>
         <input type="text" id="name" name="name"><br><br>
         
         <label>Date</label>
-        <input type="date" id="dat" name="dat"><br><br>
+        <input type="date" id="date" name="date"><br><br>
         
-        <button type="submit" class="addemploe">Add Employee</button>
+        <button type="submit" class="addemploe" onclick="store()">Add Employee</button>
       </form>
+                  
+        <script>
+            function store(){
+                let fetch = document.getElementById("name")
+                let firstName = fetch.value;
+                
+                localStorage.setItem("myitem",firstName);
+                window.location.href = "home.html";
+            }
+        </script>
+
+
+      <!-- <script>
+        function store(){
+            let fName = document.getElementById("name").value;
+            let eDate = document.getElementById("date").value;
+
+            let employeName = document.getElementById("fname");
+            let employeDate = document.getElementById("date2");
+           
+            employeName.innerHTML = fName;
+            employeDate.innerHTML = employeDate;
+        }
+    </script>
+              -->
+
       
 </body>
 </html>
+
+
+
+
+
+<!-- <script>
+    function store(){
+        let fetch = document.getElementById("name");
+        let firstName = fetch.value;
+        // let lNmae = document.getElementById("lname").value;
+
+        let par = document.getElementById("namePara");
+
+        par.innerHTML = firstName; //will store in 'par' and send it to html, will trigger in html 
+        // par.innerHTML = lNmae;
+
+    // alert("name");  
+    }
+</script> -->
