@@ -1,72 +1,23 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD EMPLOYEE</title>
     <link rel="stylesheet" href="style.css">
-    <title>Add Employee</title>
-
+    <script src="employe.js"></script>
 </head>
 <body>
- 
-
-    <form>  
-        <p>Employee Details Form</p>
-
-        <label>Name</label>
+    <form action="index.html">
+        <label for="name">Employee Name:</label>
         <input type="text" id="name" name="name"><br><br>
-        
-        <label>Date</label>
+
+        <label for="date">Date:</label>
         <input type="date" id="date" name="date"><br><br>
-        
-        <button type="submit" class="addemploe" onclick="store()">Add Employee</button>
-      </form>
-                  
-        <script>
-            function store(){
-                let fetch = document.getElementById("name")
-                let firstName = fetch.value;
-                
-                localStorage.setItem("myitem",firstName);
-                window.location.href = "home.html";
-            }
-        </script>
 
+        <button onclick="addEmployee()">Add Employee</button>
+    </form>
 
-      <!-- <script>
-        function store(){
-            let fName = document.getElementById("name").value;
-            let eDate = document.getElementById("date").value;
-
-            let employeName = document.getElementById("fname");
-            let employeDate = document.getElementById("date2");
-           
-            employeName.innerHTML = fName;
-            employeDate.innerHTML = employeDate;
-        }
-    </script>
-              -->
-
-      
 </body>
-</html>
-
-
-
-
-
-<!-- <script>
-    function store(){
-        let fetch = document.getElementById("name");
-        let firstName = fetch.value;
-        // let lNmae = document.getElementById("lname").value;
-
-        let par = document.getElementById("namePara");
-
-        par.innerHTML = firstName; //will store in 'par' and send it to html, will trigger in html 
-        // par.innerHTML = lNmae;
-
-    // alert("name");  
-    }
-</script> -->
+</html> -->

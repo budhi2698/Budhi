@@ -1,107 +1,118 @@
-body{
+body {
     margin: 0;
     padding: 20px;
     font-family: sans-serif;
-}
-*{
+  }
+  * {
     box-sizing: border-box;
-
-}
-h1{
+  }
+  h1 {
     text-align: center;
     font-family: sans-serif;
-}
-h2{
+  }
+  h2 {
     text-align: center;
     font-family: sans-serif;
-}
-.table{
-width: 100%;
-border-collapse: collapse;
-}
-.table th{
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table th {
+    background-color: rgb(143, 196, 236);
+    text-align: center;
     padding: 12px 15px;
-    border: 1px solid #ddd;
-    text-align: center;
-    font-size: 16px; 
-    background-color: rgb(73, 129, 175);
-}
-@media(max-width: 500px) {
-    .table thead{
-        display: none;
+  }
+  .table td{
+    border: 1px solid #f1ecec;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 16px;
+  }
+  .table tbody tr:nth-child(even) {
+    background-color: #f8f8f7;
+  }
+  
+  @media (max-width: 600px) {
+    .table
+    {
+      display: block;
+      width: 100%;
     }
-} 
-.con{
+  }
+  .con {
     display: flex;
     justify-content: center; /* centers the items horizontally */
     align-items: center; /* centers the items vertically */
-
-}
-.add{
-    background-color: #54e4ee; 
+    float: right;
+    width: 20%;
+    padding: 0px 10px 0px 0px;
+  }
+  @media (max-width: 600px) {
+    .con
+    {
+      display: block;
+      width: 100%;
+    }
+  }
+  .add {
+    background-color: #54e4ee;
     border: none;
-    border-radius: 20px; 
+    border-radius: 20px;
     height: 30px;
-    width: 20px; 
+    width: 20px;
     text-align: center;
-    flex-grow: 1; 
-    margin: 0 10px; 
+    flex-grow: 1;
+    margin: 0 10px;
     /* justify-content: space-between; */
-
-}
-.add:hover {
-    background-color: rgb(21, 172, 172); 
-}
-.update{
+  }
+  .add:hover {
+    background-color: rgb(21, 172, 172);
+  }
+  .update {
     background-color: rgb(241, 241, 25);
     border: none;
     border-radius: 20px;
     height: 30px;
-    width: 20px; 
+    width: 20px;
     text-align: center;
-    flex-grow: 1; 
-    margin: 0 10px; 
-}
-.update:hover {
+    flex-grow: 1;
+    margin: 0 10px;
+  }
+  .update:hover {
     background-color: rgb(147, 150, 3);
-}
-.delete{
+  }
+  .delete {
     background-color: rgb(240, 65, 65);
     border: none;
     border-radius: 20px;
     height: 30px;
-    width: 20px; 
+    width: 20px;
     text-align: center;
-    flex-grow: 1; 
-    margin: 0 10px; 
-}
-.delete:hover{
-    background-color:#7e0202;
-}
-
-form {
+    flex-grow: 1;
+    margin: 0 10px;
+  }
+  .delete:hover {
+    background-color: #7e0202;
+  }
+  
+  form {
     margin: 20px auto;
     max-width: 500px;
     background-color: #e7e4e4;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px #e9e2e2;
-}
-p{
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: bolder;
-    font-size: 24px;
-}
-label {
+  }
+  label {
     display: block;
     width: 100px;
     font-weight: bold;
     font-family: sans-serif;
     padding-bottom: 3px;
     justify-content: center;
-}
-input{
+  }
+  input {
     width: 97%;
     height: 30px;
     padding: 5px;
@@ -110,9 +121,9 @@ input{
     border: 1px solid #ccc;
     margin-bottom: 10px;
     justify-content: center;
-}
-button[type="submit"] {
-    background-color: #4CAF50;
+  }
+  button[type="button"] {
+    background-color: #4caf50;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -120,103 +131,23 @@ button[type="submit"] {
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
-}
-form {
-    margin: 20px auto;
-    max-width: 500px;
-    background-color: #e7e4e4;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px #e9e2e2;
-}
-p{
+  }
+  /* p {
     text-align: center;
     font-family: sans-serif;
     font-weight: bolder;
     font-size: 24px;
-}
-label {
-    display: block;
-    width: 100px;
-    font-weight: bold;
-    font-family: sans-serif;
-    padding-bottom: 3px;
-    justify-content: center;
-}
-input{
+  } */
+  /* .sub {
     width: 99%;
     height: 40px;
-    padding: 5px;
-    font-family: sans-serif;
-    border-radius: 6px;
-    /* border: 1px solid #ccc; */
-    border: none;
-    box-shadow: #ddd;
-    margin-bottom: 10px;
-    justify-content: center;
-}
-button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    text-align: center;
-    width: 99%;
-    height: 40px;
-}
-/* .remov{
-    background-color: #f51d1d;
-    border: none;
-    border-radius: 20px;
-    height: 30px;
-    width: 80px;
-    justify-content: center;
-    text-align: center;
-}
-.remov:hover{
-    background-color:#8b0505;
-} */
-.sub{
-    width: 99%;
-    height: 40px;
-}
-.sub:hover{
+  }
+  .sub:hover {
     background-color: #02411e;
-}
-
-.addemploe:hover{
-    background-color: #02411e;
-}
-/* .deleted{
-    margin: auto;
-    padding: 20px;
-    padding-top: 30px;
-} */
-
-
-
-
-
-
-/* #popup-form {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
   }
   
-  #popup-btn {
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+  .addemploe:hover {
+    background-color: #02411e;
   } */
+
+  
