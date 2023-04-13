@@ -96,7 +96,7 @@ body {
     background-color: #7e0202;
   }
   
-  form {
+  /* form {
     margin: 20px auto;
     max-width: 500px;
     background-color: #e7e4e4;
@@ -131,7 +131,7 @@ body {
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
-  }
+  } */
   /* p {
     text-align: center;
     font-family: sans-serif;
