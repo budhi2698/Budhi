@@ -51,7 +51,7 @@ body {
   @media (max-width: 600px) {
     .con
     {
-      display: block;
+      display:grid;
       width: 100%;
     }
   }
@@ -60,7 +60,6 @@ body {
     border: none;
     border-radius: 20px;
     height: 30px;
-    width: 20px;
     text-align: center;
     flex-grow: 1;
     margin: 0 10px;
@@ -69,12 +68,18 @@ body {
   .add:hover {
     background-color: rgb(21, 172, 172);
   }
+  @media (max-width: 600px) {
+    .add
+    {
+      display: block;
+      width: 100%;
+    }
+  }
   .update {
     background-color: rgb(241, 241, 25);
     border: none;
     border-radius: 20px;
     height: 30px;
-    width: 20px;
     text-align: center;
     flex-grow: 1;
     margin: 0 10px;
@@ -82,18 +87,31 @@ body {
   .update:hover {
     background-color: rgb(147, 150, 3);
   }
+  @media (max-width: 600px) {
+    .update
+    {
+      display:block;
+      width: 100%;
+    }
+  }
   .delete {
     background-color: rgb(240, 65, 65);
     border: none;
     border-radius: 20px;
     height: 30px;
-    width: 20px;
     text-align: center;
     flex-grow: 1;
     margin: 0 10px;
   }
   .delete:hover {
     background-color: #7e0202;
+  }
+  @media (max-width: 600px) {
+    .delete
+    {
+      display: block;
+      width: 100%;
+    }
   }
   
   /* form {
